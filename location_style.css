@@ -1,0 +1,347 @@
+html, body {
+ padding: 0px;
+ margin: 0px;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+
+header{
+    position : relative;
+    
+    background-color: rgb(31, 31, 31);
+}
+
+.logo{
+    position: absolute;
+    justify-content: start;
+    text-align: center;
+    top: 20%;
+    left: 2%;
+    font-size: 20px;
+    color: rgb(236, 168, 129);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.topnav{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(31, 31, 31); */
+}
+
+.topnav a {
+    transition: ease-in-out 0,3s;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(230, 230, 230);
+    color: rgb(94, 94, 94);
+  }
+
+  .topnav a:not(.active):hover {
+    transition: ease-in-out 0.3s;
+    background-color: #525050;
+    color: white;
+  }
+ 
+  .main-home-section{
+      position :relative;
+      height: 600px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .main-image{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+  }
+
+  .main-text{
+      padding-top: 130px ;
+      position : absolute;
+      text-align: center;
+
+      color: whitesmoke;
+      
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 70px;
+      font-weight: 400;
+  }
+
+  .company-logos{
+      width: 100px;
+      padding: 5px;
+  }
+
+  .company-logos-bar{
+      padding-inline: 200px;
+      display : flex ;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(230, 230, 230);
+      height: 10vh;
+      position: relative;
+  }
+
+  .twocars{
+        width: 300px;
+  }
+
+  .Reviews{
+      margin-top: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+  figure{
+   height: 200px;
+   width: 300px;
+  }
+
+  .stars{
+    width: 300px;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+  }
+
+  .stars img{
+    width: 200px;
+    height: 100%;
+  }
+
+  .ratings{
+      box-shadow: 1px 1px 20px rgb(170, 170, 170);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(252, 252, 252);
+      width: 300px;
+      height: 200px;
+  }
+  
+  .ratings p{
+      margin-top: 0px;
+      line-height: 40px;
+      text-align: center;
+      font-weight: 600;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .avantages{
+    background-image:url(./torsten.jpg);
+    background-position: center;
+      display: flex;
+      align-items: center;
+      height: 400px;
+      margin-top: 80px;
+      background-color: rgb(39, 39, 39);
+  }
+
+  .avantage-single{
+      margin-right: 50px;
+      margin-block: 25px;
+      gap: 30px;
+      display: flex;
+      align-items: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 24px;
+      color: rgb(250, 250, 250);
+      font-weight: bold;
+    }
+
+
+    .offers{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .offer{
+        padding: 15px;
+        width: 400px;
+        height: 200px;
+        display:flex;
+        align-items:center ;
+        justify-content: center;
+    }
+
+    .image-offer{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.8);
+    }
+
+    .image-offer:hover{
+        filter: brightness(0.4);
+        transition: 0.3s ease-in-out;
+    }
+
+    .offer-text{
+    color:white;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    }
+
+.bar-offer{
+    position: absolute;
+    margin-top: 50px;
+    height: 3px;
+    background-color: rgb(255, 200, 149);
+}
+
+.downbar{
+    margin-top: 100px;
+    background-color: rgb(206, 206, 206);
+    color: rgb(90, 90, 90);
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer{
+    padding-inline: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(39, 39, 39);
+    color: seashell;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.social-media{
+    display: flex;
+    justify-content: right;
+    gap : 10px;
+    color: seashell;
+}
+
+/*////////////////////////////////////////////////////////////*/
+
+label{
+    color: seashell;
+}
+
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #ecad8f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #f7a74b;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right,rgb(134, 134, 134),rgb(34, 34, 34));
+    padding: 20px;
+  }
+  form{
+      width: 400px;
+  }
+
+  /*/////////////////media queries////////////////*/
+
+            @media (max-width: 1000px){
+                .twocars{
+                    width: 150px;
+                }
+                
+                .company-logos{
+                    width: 70px;
+                }
+                .company-logos-bar{
+                    padding-inline: 100px;
+                }
+
+            }
+
+            @media (max-width: 648px){
+        
+                .avantage-single{
+                    line-height: 40px;
+                }
+                .header{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .logo{
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    position: static;
+                }
+                .main-text{
+                    font-size: 60px;
+                    padding-top: 170px;
+                }
+
+                .twocars{
+                    width: 100px;
+                }
+                
+                .company-logos{
+                    width: 40px;
+                }
+                .company-logos-bar{
+                    padding-inline: 50px;
+                }
+                .downbar{
+                    font-size: 10px;
+                }
+                .footer{
+                    font-size: 10px;
+                    justify-content: space-around;
+                }
+
+                .social-media{
+                   /* display : none; */
+                }
+
+                .social-media img{
+                    width: 10px;
+                }
+
+            }
+            
+/* ///////////////////////////////////////////////////// */
+
+
