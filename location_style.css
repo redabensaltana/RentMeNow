@@ -243,17 +243,17 @@ label{
 }
 
 input[type=text], textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
   }
   
-  /* Style the submit button with a specific background color etc */
+  
   input[type=submit] {
     background-color: #ecad8f;
     color: white;
@@ -263,20 +263,31 @@ input[type=text], textarea {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+  
   input[type=submit]:hover {
     background-color: #f7a74b;
   }
   
-  /* Add a background color and some padding around the form */
   .wrapper {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right,rgb(134, 134, 134),rgb(34, 34, 34));
-    padding: 20px;
+    background-image:url(./carcontact.jpg);
+    padding: 40px;
   }
+  
   form{
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.164), rgb(0, 0, 0));
       width: 400px;
+      padding: 20px 0;
+  }
+
+  .centery{
+    display: flex;
+    flex-direction: column;
   }
 
   /*/////////////////media queries////////////////*/
@@ -331,10 +342,10 @@ input[type=text], textarea {
                     font-size: 10px;
                     justify-content: space-around;
                 }
-
-                .social-media{
-                   /* display : none; */
-                }
+/* 
+                .centery{
+                padding-block: 20px;
+                } */
 
                 .social-media img{
                     width: 10px;
