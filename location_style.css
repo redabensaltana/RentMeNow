@@ -236,7 +236,7 @@ div.topnav{
     color: seashell;
 }
 
-/*////////////////////////////////////////////////////////////*/
+/*///////////////////////contact////////////////////////*/
 
 label{
     color: seashell;
@@ -288,7 +288,34 @@ input[type=text], textarea {
   .centery{
     display: flex;
     flex-direction: column;
+
   }
+
+/*///////////////////////gallery////////////////////////*/
+
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 24%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .hover:hover{
+      filter: brightness(0.6);
+      transition: 0.1s ease-in-out;
+  }
+
 
   /*/////////////////media queries////////////////*/
 
@@ -306,10 +333,10 @@ input[type=text], textarea {
 
             }
 
-            @media (max-width: 648px){
+            @media (max-width:735px){
         
                 .avantage-single{
-                    line-height: 40px;
+                    line-height: 30px;
                 }
                 .header{
                     display: flex;
@@ -352,6 +379,20 @@ input[type=text], textarea {
                 }
 
             }
+
+            @media (max-width: 900px) {
+                .column {
+                  flex: 48%;
+                  max-width: 50%;
+                }
+              }
+
+              @media (max-width: 500px) {
+                .column {
+                  flex: 99%;
+                  max-width: 100%;
+                }
+              }
             
 /* ///////////////////////////////////////////////////// */
 
