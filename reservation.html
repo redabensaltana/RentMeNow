@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="location_style.css">
+
+    <title>RentMeNow /\ Gallery</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+
+    <header>
+        <div class="logo"><img src="./logo/logo test.svg" alt=""></div>
+        <div class="topnav">
+            <a href="index.html">Accueil</a>
+            <a href="Gallery.html">Galerie</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="reservation.html">Réservation</a>
+        </div>
+    </header>
+    <div style="background-color: rgb(230, 230, 230); height: 10px;"></div>
+
+    <div class="wrapper-res">
+        <form class="res">
+
+            <p style="font-size: 20px; font-weight: 700;color: azure;">RESERVATION</p>
+            
+            <div class="centery">
+                
+            <label for="type">Vehicule</label>
+
+            <select name="type" id="type" onchange="populate()">
+                <option id="none" value="none"></option>
+                <option id="Moto" value="Moto">Moto</option>
+                <option id="Citadine" value="Citadine">Citadine</option>
+                <option id="Compact" value="Compact">Compact</option>
+                <option id="Berline" value="Berline">Berline</option>
+                <option id="Utilitaire" value="Utilitaire">Utilitaire</option>
+                <option id="Engin de Chantier" value="Engin de Chantier">Engin de Chantier</option>                
+                <option id="Camion" value="Camion">Camion</option>          
+            </select>
+
+            </div>
+          
+            
+            <div class="centery">
+            <label for="BV">Boite à vitesse</label>
+            <select name="BV" id="BV" onchange="boitev()"></select>
+            </div>
+
+
+
+            <div class="centery">
+            <label for="carburant">Carburant</label>
+            <select name="carburant" id="carburant" onchange="carb()"></select>
+            </div>
+
+            
+            
+            
+            <div class="centery">
+            <label for="jours">Jours</label>
+            <input name="jours" type="number" id="jours">
+            </div>
+            
+            <input id="submit" type="button" value="Calcul" onclick="calcul_prix()">
+
+
+        </form>
+
+        <div id="afficher-div">
+            <p id="afficher">Prix</p>
+        </div>
+
+    </div>
+
+    
+
+
+    <section class="before-footer">
+        <div class="downbar">
+            <p>DESTINATIONS PRINCIPALES<br><br>Lisbonne<br>Ajaccio<br>Porto<br>Faro<br>Marseille</p>
+            <p>PLUS DE DESTINATIONS<br><br>Miami<br>Figari<br>Nantes<br>Bastia<br>Toulouse</p>
+            <p>L'ENTREPRISE<br><br>Offres d'emploi<br>Mentions légales<br>A propos de RentMeNow<br>Avis des clients<br>Support client</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>©2021 RentMeNow  |  Charte de confidentialité  |  Conditions Générales</p>
+            <div class="social-media">
+                <img src="./facebook-brands.svg" >
+                <img src="./instagram-square-brands.svg" >
+                <img src="./twitter-brands.svg" >
+            </div>
+        </div>
+    </footer>
+
+    <script reservation src="reservation.js"></script>
+
+</body>
+
+</html>
