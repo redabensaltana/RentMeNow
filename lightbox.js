@@ -10,11 +10,15 @@ images.forEach(image => {
         img.className ='expand'          //give the img the expand properties           
         img.src = image.src             //take the source of the selected image
 
+        var inner = document.createElement('div');
+        inner.className = 'inner'
+        inner.append(img)
+
         while(lightbox.firstChild){
             lightbox.removeChild(lightbox.firstChild) //check if there is an image and remove it
         }
 
-        lightbox.appendChild(img)       //inside lightbox
+        lightbox.appendChild(inner)       //inside lightbox
     })
 })
 
@@ -24,3 +28,4 @@ lightbox.addEventListener('click', remove => { // remove lightbox on click
    return
     lightbox.classList.remove('active')   
 })
+
