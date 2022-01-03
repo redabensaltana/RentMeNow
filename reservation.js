@@ -112,6 +112,8 @@ var calcul = 0;
 function calcul_prix() {
 
     var jours = document.getElementById("jours").value;
-    calcul = jours * (prix + (prix * taux_carb) + (prix * taux_bv)) + " €";
-    document.getElementById("afficher").innerText = calcul;
+    calcul = jours * (prix + (prix * taux_carb) + (prix * taux_bv));
+    var new_calcul = parseFloat(calcul).toFixed(2)
+    document.getElementById("afficher").innerText = `${new_calcul} €`;
 }
+
